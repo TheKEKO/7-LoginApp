@@ -15,6 +15,12 @@ class ViewController: UIViewController {
     let name = "User"
     let password = "Password"
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let logOVC = segue.destination as? LogOutViewController else { return }
+        logOVC.txtNameNew = txtName.text
+    }
+    
+// MARK: - IBActions
     @IBAction func buttonPressed() {
         if name == txtName.text! && password == txtPassword.text! {
         } else {
@@ -30,9 +36,14 @@ class ViewController: UIViewController {
         showAlert(title: "Ooops!", message: "Your password is Password 😉")
     }
     
-    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard segue.source is LogOutViewController else { return }
+        txtName.text = ""
+        txtPassword.text = ""
+    }
 }
 
+// MARK: - Private Methods
 extension ViewController {
     private func showAlert (title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -43,4 +54,7 @@ extension ViewController {
         present(alert, animated: true)
     }
 }
+
+
+
 

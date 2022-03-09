@@ -9,15 +9,13 @@ import UIKit
 
 class LogOutViewController: UIViewController {
 
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
- 
     @IBOutlet var nameTxt: UILabel!
     
+    var txtNameNew: String!
 
-    @IBAction func LogOutButton() {
-        dismiss(animated: true)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        guard let txtNameNew = txtNameNew else { return }
+        nameTxt.text = ("Welcome, \(txtNameNew)!")
     }
-    
 }
