@@ -13,6 +13,7 @@
 		D48C704F27D80C0A00625AC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48C704D27D80C0A00625AC2 /* Main.storyboard */; };
 		D48C705127D80C0D00625AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48C705027D80C0D00625AC2 /* Assets.xcassets */; };
 		D48C705427D80C0D00625AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48C705227D80C0D00625AC2 /* LaunchScreen.storyboard */; };
+		D4DE8BC627D9106300B6E723 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE8BC527D9106300B6E723 /* LogOutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D48C705027D80C0D00625AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48C705327D80C0D00625AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D48C705527D80C0D00625AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4DE8BC527D9106300B6E723 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				D48C704927D80C0A00625AC2 /* SceneDelegate.swift */,
 				D48C704B27D80C0A00625AC2 /* ViewController.swift */,
 				D48C704D27D80C0A00625AC2 /* Main.storyboard */,
+				D4DE8BC527D9106300B6E723 /* LogOutViewController.swift */,
 				D48C705027D80C0D00625AC2 /* Assets.xcassets */,
 				D48C705227D80C0D00625AC2 /* LaunchScreen.storyboard */,
 				D48C705527D80C0D00625AC2 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				D48C704C27D80C0A00625AC2 /* ViewController.swift in Sources */,
 				D48C704827D80C0A00625AC2 /* AppDelegate.swift in Sources */,
+				D4DE8BC627D9106300B6E723 /* LogOutViewController.swift in Sources */,
 				D48C704A27D80C0A00625AC2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +299,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +311,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +328,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
