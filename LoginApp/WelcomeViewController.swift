@@ -3,7 +3,7 @@
 //  LoginApp
 //
 //  Created by Aleksandr F. on 09.03.2022.
-//new
+//
 
 import UIKit
 
