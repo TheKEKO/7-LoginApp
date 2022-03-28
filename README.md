@@ -1,5 +1,5 @@
 # LoginApp
-**Homework 2.3 LoginApp**
+**LoginApp**
 
 1. The first **LoginViewController** screen is responsible for user authorization.
 
